@@ -1,10 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("images/background.png");
   height: 100%;
   width: 100%;
   overflow-x: hidden;
   margin: 0;
+  font-family: "Space Mono", monospace;
 }
 
 /* title */
@@ -24,15 +29,86 @@ h1 {
   color: white;
   text-align: center;
   font-size: 20px;
+  font-weight: bold;
 }
 
+.intro-div {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* project tabs */
+/* Style the tab buttons */
+.project-tabs {
+  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.tablink {
+  background-color: white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 25px;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 25px;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#London {
+  background-color: #d30001;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#Paris {
+  background-color: #61dafb;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#Tokyo {
+  background-color: #fa7a18;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#Oslo {
+  background-color: #b07219;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
 /* footer icons section */
 .icons {
   text-align: center;
+}
+
+.icons-div {
+  background-color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: white;
 }
 
 .icons-li {
@@ -40,6 +116,6 @@ h1 {
 }
 
 .icons-img {
-  height: 30px;
+  height: 50px;
   padding: 10px;
 }

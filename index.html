@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kyle's Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="title">
@@ -14,11 +17,43 @@
         </h1>
     </section>
     <section class="intro">
-        <p>
-            Hello my name is Kyle Zimmerman, and I am a California based developer. If I am not working on projects for clients, I am working on my own personal projects. 
-        </p>
+        <div class="intro-div">
+            <p>
+                Hello my name is Kyle Zimmerman, and I am a California based developer. If I am not working on projects for clients, I am working on my own personal projects. 
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="project-tabs">
+            <div id="London" class="tabcontent">
+                <h1>Ruby on Rails</h1>
+                <p>This is my Ruby on Rails Project</p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h1>React</h1>
+                <p>This is my React App</p>
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h1>HTML/CSS</h1>
+                <p>Here is my HTML/CSS project</p>
+              </div>
+              
+              <div id="Oslo" class="tabcontent">
+                <h1>Java</h1>
+                <p>Here is my Java project.</p>
+              </div>
+              
+              <button class="tablink bottom-left"  onclick="openCity('London', this, '#D30001')">Ruby on Rails</button>
+              <button class="tablink" onclick="openCity('Oslo', this, '#b07219')" id="defaultOpen">Java</button>
+              <button class="tablink" onclick="openCity('Paris', this, '#61dafb')">React</button>
+              <button class="tablink bottom-right" onclick="openCity('Tokyo', this, '#fa7a18')">HTML/CSS</button>
+              
+        </div>
     </section>
     <section class="icons">
+        <div class="icons-div">
             <ul class="icons-ul">
                 <li class="icons-li">
                     <a href="https://github.com/KZdesigns"><img class="icons-img" src="images/github.png" alt="github"></a>                
@@ -30,6 +65,8 @@
                     <a href="mailto: kylezimmerman@yahoo.com"><img class="icons-img" src="images/paper-plane.png" alt="message"></a>
                 </li>
             </ul>
+        </div>
     </section>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
