@@ -10,6 +10,7 @@ function openCity(cityName, elmnt, color) {
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
+      tablinks[i].style.color = "";
     }
   
     // Show the specific tab content
@@ -17,7 +18,7 @@ function openCity(cityName, elmnt, color) {
   
     // Add the specific color to the button used to open the tab content
     elmnt.style.backgroundColor = color;
-
+    elmnt.style.color = color;
   }
   
   // Get the element with id="defaultOpen" and click on it
