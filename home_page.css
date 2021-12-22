@@ -1,46 +1,27 @@
 * {
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 
-html,
 body {
-  background-image: url("images/background.png");
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
   margin: 0;
   font-family: "Space Mono", monospace;
 }
 
-/* title */
-.title {
-  color: white;
+/* Style the content */
+.headline {
+  font-size: 70px;
+}
+.content {
+  padding: 10px;
   text-align: center;
-  font-size: 50px;
-}
-
-.title,
-h1 {
-  margin: 20px;
-}
-
-/* Into section */
-.intro {
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.intro-div {
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 /* project tabs */
 /* Style the tab buttons */
 .project-tabs {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 150px;
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -99,23 +80,79 @@ h1 {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-/* footer icons section */
-.icons {
+
+/* about me */
+.hero-image {
+  padding-top: 50px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
-.icons-div {
-  background-color: white;
-  position: absolute;
+.about_me {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.about_me_text {
+  padding-bottom: 50px;
+}
+
+/* testimonials */
+/* Create three equal columns that floats next to each other */
+.row {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 80px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  transition: transform 0.2s;
+}
+
+.column:hover {
+  transform: scale(1.2);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
   bottom: 0;
+  position: fixed;
   width: 100%;
 }
 
-.icons-li {
+ul {
+  list-style: none;
+  display: inline;
+  margin-right: 50px;
+}
+
+li {
   display: inline;
 }
 
 .icons-img {
-  height: 60px;
-  padding: 10px;
+  height: 25px;
+}
+
+.icons-img:hover {
+  opacity: 0.5;
 }

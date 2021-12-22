@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kyle Zimmerman</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home_page.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <h1 class="headline">Kyle Zimmerman</h1>
+        <p>Hello my name is Kyle Zimmerman, and I am a California based developer. If I am not working on projects for clients, I am working on personal projects to enhance my programing skills.</p>
+    </div>
+    <div class="project-tabs">
+        <div id="London" class="tabcontent">
+            <h1>Ruby on Rails</h1>
+            <p>This is my Ruby on Rails Project</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h1>React</h1>
+            <p>This is my React App</p>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h1>HTML/CSS</h1>
+            <p>Here is my HTML/CSS project</p>
+          </div>
+          
+          <div id="Oslo" class="tabcontent">
+            <h1>Java</h1>
+            <p>Here is my Java project.</p>
+          </div>
+          
+          <button class="tablink bottom-left"  onclick="openCity('London', this, '#D30001')">Ruby on Rails</button>
+          <button class="tablink" onclick="openCity('Oslo', this, '#b07219')" id="defaultOpen">Java</button>
+          <button class="tablink" onclick="openCity('Paris', this, '#61dafb')">React</button>
+          <button class="tablink bottom-right" onclick="openCity('Tokyo', this, '#fa7a18')">HTML/CSS</button> 
+    </div>
+    <div class="about_me">
+        <img src="images/selfie.png" alt="Kyle Zimmerman" class="hero-image">
+        <p class="about_me_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+    </div>
+    <div class="row">
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Column</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+      </div>
+    <div class="footer">
+        <ul>
+            <li>
+                <a href="https://github.com/KZdesigns"><img class="icons-img" src="images/github.png" alt="github"></a>                
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kylezimmerman-tech-enthusiast"><img class="icons-img" src="images/linkdin.png" alt="linkdin"></a>
+            </li>
+            <li>
+                <a href="mailto: kylezimmerman@yahoo.com"><img class="icons-img" src="images/paper-plane.png" alt="message"></a>
+            </li>
+        </ul>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
