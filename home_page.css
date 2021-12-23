@@ -8,22 +8,44 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+.tab {
+  display: inline-block;
+  margin-left: 170px;
+}
+
 /* Style the content */
 .headline {
   font-size: 70px;
 }
 .content {
-  padding: 10px;
+  background-image: url("images/skyline.png");
   text-align: center;
+  color: black;
+  height: 600px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  border-bottom: solid;
+  border-color: black;
+}
+
+.paragraph {
+  color: black;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 0;
 }
 
 /* project tabs */
 /* Style the tab buttons */
+.projects-container {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+}
 .project-tabs {
-  margin-top: 20px;
-  margin-bottom: 150px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .tablink {
   background-color: white;
@@ -37,13 +59,13 @@ body {
   width: 25%;
 }
 
-.bottom-left {
+/* .bottom-left {
   border-bottom-left-radius: 25px;
-}
+} */
 
-.bottom-right {
+/* .bottom-right {
   border-bottom-right-radius: 25px;
-}
+} */
 
 /* Change background color of buttons on hover */
 .tablink:hover {
@@ -55,33 +77,44 @@ body {
 .tabcontent {
   color: white;
   display: none;
-  padding: 50px;
+  padding: 100px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
 /* Style each tab content individually */
 #London {
   background-color: #d30001;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 #Paris {
   background-color: #61dafb;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 #Tokyo {
   background-color: #fa7a18;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 #Oslo {
   background-color: #b07219;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
 /* about me */
+.square {
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 5s ease, transform 5s ease;
+  }
+}
+
+.square-transition {
+  opacity: 1;
+  transform: none;
+}
+
 .hero-image {
   padding-top: 50px;
   padding-bottom: 30px;
@@ -89,26 +122,33 @@ body {
 }
 
 .about_me {
-  background-color: #f1f1f1;
+  background-color: white;
   text-align: center;
+  border-bottom: solid;
+  border-top: solid;
 }
 
 .about_me_text {
   padding-bottom: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /* testimonials */
 /* Create three equal columns that floats next to each other */
 .row {
+  margin-top: 80px;
   margin-left: 80px;
   margin-right: 80px;
   margin-bottom: 80px;
+  text-align: center;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 50px;
   transition: transform 0.2s;
+  font-size: small;
 }
 
 .column:hover {
