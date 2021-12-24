@@ -39,7 +39,8 @@ body {
 @media screen and (max-width: 900px) {
   .content {
     width: 100%;
-    font-size: 12px;
+    background-size: contain;
+    height: 250px;
   }
 }
 
@@ -53,6 +54,7 @@ body {
 @media screen and (max-width: 600px) {
   .paragraph {
     font-size: 12px;
+    padding: 10px;
   }
 }
 
@@ -209,9 +211,10 @@ body {
   padding-right: 200px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .about_me_text {
     font-size: 12px;
+    padding: 10px;
   }
 }
 
