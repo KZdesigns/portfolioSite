@@ -36,7 +36,7 @@ body {
   border-color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .content {
     width: 100%;
     background-size: contain;
@@ -211,7 +211,7 @@ body {
   padding-right: 200px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .about_me_text {
     font-size: 12px;
     padding: 10px;
