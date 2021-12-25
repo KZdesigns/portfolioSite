@@ -18,6 +18,10 @@ body {
   font-size: 70px;
 }
 
+.item {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
   .headline {
     font-size: 50px;
@@ -235,7 +239,6 @@ body {
   margin-top: 80px;
   margin-left: 80px;
   margin-right: 80px;
-  margin-bottom: 80px;
   text-align: center;
 }
 .column {
@@ -338,3 +341,23 @@ li {
 .grid-container > div:hover {
   opacity: 0.5;
 }
+
+/* download button */
+.btn {
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  color: black;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  opacity: 0.5;
+}
+
+/* up arrow */
